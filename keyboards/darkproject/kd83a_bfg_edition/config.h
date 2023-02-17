@@ -61,6 +61,10 @@
 #define DRIVER_1_LED_TOTAL 68
 #define DRIVER_2_LED_TOTAL 54
 #define RGB_MATRIX_LED_COUNT (DRIVER_1_LED_TOTAL + DRIVER_2_LED_TOTAL)
+//(Optional) LED current scaling value (0-255, higher values mean LED is brighter at full PWM). Default 150.
+#define AW_SCALING_MAX 255
+// (Optional) Driver global current limit (0-255, higher values means the driver may consume more power). Default 150.
+#define AW_GLOBAL_CURRENT_MAX 255
 
 // RGB Matrix Animation modes. Explicitly enabled
 // For full list of effects, see:
@@ -112,4 +116,4 @@
 #define ENABLE_RGB_MATRIX_SOLID_MULTISPLASH
 
 
-#define RGB_MATRIX_CENTER { 87, 22 }
+#define RGB_MATRIX_CENTER { 102, 30 }
