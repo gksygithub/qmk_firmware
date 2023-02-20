@@ -24,7 +24,7 @@
 #undef WB32_SPI_USE_SPIM2
 #define WB32_SPI_USE_SPIM2 TRUE
 
-//Set MCU freequency to 96mhz
+//Set MCU frequency to 96mhz
 #undef WB32_PLLMUL_VALUE
 #define WB32_PLLMUL_VALUE 16
 
