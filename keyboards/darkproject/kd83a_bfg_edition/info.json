@@ -6,8 +6,7 @@
     "usb": {
         "vid": "0x342D",
         "pid": "0xE392",
-        "device_version": "0.0.3",
-        "force_nkro": true
+        "device_version": "0.0.3"
     },
     "indicators": {
         "caps_lock": "C14"
