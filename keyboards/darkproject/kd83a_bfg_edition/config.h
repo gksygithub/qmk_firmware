@@ -16,18 +16,10 @@
 
 #pragma once
 
-#define MATRIX_ROW_PINS \
-    { B0, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13 }
-#define MATRIX_COL_PINS \
-    { A0, A1, A2, A3, A4, A8, A9, A10 }
-
 #define ENCODERS_PAD_A \
     { C2 }
 #define ENCODERS_PAD_B \
     { C3 }
-
-/* COL2ROW or ROW2COL */
-#define DIODE_DIRECTION COL2ROW
 
 /* Hold ESC on start up to clear EEPROM and boot into bootloader mode */
 #define BOOTMAGIC_LITE_ROW 1
