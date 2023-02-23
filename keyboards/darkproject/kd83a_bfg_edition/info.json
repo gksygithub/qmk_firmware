@@ -6,13 +6,19 @@
     "usb": {
         "vid": "0x342D",
         "pid": "0xE392",
-        "device_version": "0.0.3"
+        "device_version": "0.0.3",
+        "force_nkro": true
     },
     "indicators": {
         "caps_lock": "C14"
     },
     "processor": "WB32FQ95",
     "bootloader": "wb32-dfu",
+    "diode_direction": "COL2ROW",
+    "matrix_pins": {
+        "cols": ["A0", "A1", "A2", "A3", "A4", "A8", "A9", "A10"],
+        "rows": ["B0", "B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B9", "B10", "B11", "B12", "B13"]
+    },
     "layouts": {
         "LAYOUT": {
             "layout": [
