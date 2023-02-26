@@ -19,12 +19,15 @@
 #ifdef RGB_MATRIX_ENABLE
 
 const aw_led g_aw_leds[RGB_MATRIX_LED_COUNT] = {
-/* Refer to IS31 manual for these locations
- *   driver
- *   |     R location
- *   |     |          G location
- *   |     |          |          B location
- *   |     |          |          | */
+/* Each AW20216 channel is controlled by a register at some offset between 0x00
+ * and 0xD7 inclusive.
+ * See drivers/awinic/aw20216.h for the mapping between register offsets and
+ * driver pin locations.
+ *     driver
+ *     |  R location
+ *     |  |          G location
+ *     |  |          |          B location
+ *     |  |          |          | */
     //{0, CS1_SW4,   CS2_SW4,   CS3_SW4},   //   0, k00, Esc
     
     {0, CS1_SW1,   CS2_SW1,   CS3_SW1},   //   0, k00, Esc
@@ -121,7 +124,6 @@ const aw_led g_aw_leds[RGB_MATRIX_LED_COUNT] = {
 };
 
 #define __ NO_LED
-//#define RGB_LAYOUT LAYOUT
 
 led_config_t g_led_config = {
 
