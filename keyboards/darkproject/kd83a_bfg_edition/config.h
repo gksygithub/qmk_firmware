@@ -17,9 +17,6 @@
 #pragma once
 
 #define ENCODER_DIRECTION_FLIP
-/* Hold ESC on start up to clear EEPROM and boot into bootloader mode */
-#define BOOTMAGIC_LITE_ROW 1
-#define BOOTMAGIC_LITE_COLUMN 3
 
 #define TAP_CODE_DELAY 10
 
@@ -103,5 +100,3 @@
 #define ENABLE_RGB_MATRIX_SOLID_SPLASH
 #define ENABLE_RGB_MATRIX_SOLID_MULTISPLASH
 
-
-#define RGB_MATRIX_CENTER { 102, 30 }
