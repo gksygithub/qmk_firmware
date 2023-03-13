@@ -16,11 +16,7 @@
 
 #pragma once
 
-#define ENCODERS_PAD_A \
-    { C2 }
-#define ENCODERS_PAD_B \
-    { C3 }
-
+#define ENCODER_DIRECTION_FLIP
 /* Hold ESC on start up to clear EEPROM and boot into bootloader mode */
 #define BOOTMAGIC_LITE_ROW 1
 #define BOOTMAGIC_LITE_COLUMN 3
@@ -50,8 +46,8 @@
 #define DRIVER_2_EN C13
 
 #define DRIVER_COUNT 2
-#define DRIVER_1_LED_TOTAL 68
-#define DRIVER_2_LED_TOTAL 54
+#define DRIVER_1_LED_TOTAL 66
+#define DRIVER_2_LED_TOTAL 19
 #define RGB_MATRIX_LED_COUNT (DRIVER_1_LED_TOTAL + DRIVER_2_LED_TOTAL)
 //(Optional) LED current scaling value (0-255, higher values mean LED is brighter at full PWM). Default 150.
 #define AW_SCALING_MAX 255
